@@ -1,0 +1,85 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  padding: 2em 5% 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header i {
+  color: rgb(153, 153, 153);
+}
+
+nav {
+  display: none;
+}
+
+.main-header-container {
+  background-image: url("/Assignments/HTML CSS 06-17/assets/graphic.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 11em -1em;
+  margin: 2em 0;
+}
+.main-header-container img {
+  display: none;
+}
+
+.main-header-content {
+  width: 80%;
+  padding: 2em 5%;
+}
+
+.status {
+  color: rgb(255, 57, 152);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.main-header {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.header-text {
+  font-size: 1.5em;
+  color: rgb(85, 85, 85);
+}
+
+.button-signup {
+  border-radius: 100rem;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  color: rgb(17, 17, 17);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(30deg, rgb(255, 74, 119) 20%, rgb(255, 128, 57) 60%, rgb(195, 177, 105) 98%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.button-signup:hover {
+  box-shadow: none;
+  color: white;
+}
+
+.support-banner {
+  width: 100%;
+  padding-top: 2em;
+  background-image: url("/Assignments/HTML CSS 06-17/assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -1em 0em;
+}
+
+.support-content {
+  width: 80%;
+  padding: 3em 5% 1em 5%;
+}
+.support-content h2 {
+  font-weight: 600;
+  font-size: 2em;
+}/*# sourceMappingURL=style.css.map */
