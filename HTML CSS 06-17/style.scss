@@ -3,18 +3,27 @@ $header_color: rgb(17, 17, 17);
 $text_color: rgb(85, 85, 85);
 $icon_color: rgb(153, 153, 153);
 
-// color: $primary_color;  
-// font-family: 'Inter', sans-serif;
-
 body {
     font-family: 'Inter', sans-serif;
 }
 
+h3 {
+    color: $header_color;
+    font-size: 2em;
+    font-weight: 600; 
+}
+
+p{
+    color: $text_color;
+    font-size: 1.1em;
+}
+
 header {
-    padding: 2em 5% 0 5%;
+    align-items: center; 
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    padding: 0 8%;
+    padding-top: 2em;   
 
     i {
         color: $icon_color;
@@ -31,7 +40,6 @@ nav {
     background-repeat: no-repeat;
     background-position: 11em -1em;
     margin: 2em 0;
-    
 
     img {
         display: none;
@@ -39,7 +47,7 @@ nav {
 }
 
 .main-header-content {
-    width: 80%;
+    width: 65%;
     padding: 2em 5%;
 }
 
@@ -48,21 +56,23 @@ nav {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
+    font-size: 0.8em;
 }
 
 .main-header {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 900;
 }
 
 .header-text {
-    font-size: 1.5em; 
+    font-size: 1.2em; 
     color: $text_color;
 }
 
 .button-signup {
-    border-radius: 100rem;
+    border-radius: 2rem;
     padding: 1rem 2.5rem;
+    margin: 1rem 0;
     font-weight: 600;
     color: $header_color;
     border: solid 3px transparent;
@@ -72,27 +82,197 @@ nav {
     box-shadow: 2px 1000px 1px #fff inset;
 }
 
-.button-signup:hover {
-  box-shadow: none;
-  color: white;
-}
-
 .support-banner {
     width: 100%;
     padding-top: 2em;
     background-image: url('/Assignments/HTML CSS 06-17/assets/background.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -1em -0em;
+    background-position: -15em -0em;
 
+    p {
+        color: $header_color
+    }
 }
 
 .support-content {
     width: 80%;
-    padding: 3em 5% 1em 5%;
+    padding: 3em 8% 1em 8%;
+}
 
-    h2 {
-        font-weight: 600; 
-        font-size: 2em;
+.support-companies {
+    padding: 0 8%;
+    padding-top: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+
+    img {
+        width: 80%;
+        padding: 5%;
+    }
+
+    img:nth-last-child(1):nth-child(odd) {
+        grid-column: 1 / span 2;
+        width: 40%;
     }
 }
+
+.auction-container {
+    padding: 0 8%;
+    padding-top: 1em;
+    padding-bottom: 3em;
+
+    a {
+        color: $text_color;
+        font-weight: 600;
+    }
+}
+
+.auction-items-container {
+    display: flex;
+    gap: 2em;
+    
+}
+
+.auction-item {  
+
+    .auction-item-description {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        background-color: rgb(238, 238, 238);
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    > img {
+        width: 15rem;
+        display: block;
+    }
+
+    td:nth-child(even) {
+        text-align: right;
+    }
+
+    .currency {
+        width: 0.6em;
+    }
+
+    .series {
+        color: rgb(255, 128, 57);
+        text-transform: uppercase;
+        font-size: 0.6em;
+        font-weight: 600;
+    }
+    .top-bid-label {
+        color: $text_color;
+        text-transform: uppercase;
+        font-size: 0.6em;
+        font-weight: 600;
+    }
+    .name, .top-bid {
+        color: $header_color;
+        font-size: 1em;
+        font-weight: 600;
+
+    }
+    .auction-id, .days-left {
+        color: $text_color;
+        font-size: 0.8em;
+    }
+}
+
+.bottom-banner-container {
+    padding-left: 8%;
+    padding-top: 3em;
+    border-top: solid 2px rgb(238, 238, 238);
+    border-bottom: solid 2px rgb(238, 238, 238);
+    display: flex;
+
+    .bottom-banner-content {
+       max-width: 50%;   
+    }
+
+    img {
+        margin-top: 4em;
+        margin-left: 1em;
+        margin-right: -2em;
+        align-self: flex-end;
+        max-width: 50%;
+        overflow: hidden;
+    }
+
+    .header-text {
+        border-top: solid 2px rgb(238, 238, 238);  
+    }
+}
+
+footer {
+    padding: 0 8%;
+    padding-top: 2em;
+}
+
+.socials > i {
+    padding: 0.4rem;
+    color: $icon_color
+}
+
+.footer-container-right {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    ul {
+        list-style: none;
+        flex: 50%;
+        padding: 0;
+    }
+
+    li {
+        color: $text_color;
+        font-weight: 400;
+        padding-bottom: 0.5em;
+
+        &:first-child {
+            font-weight: 600;
+            padding-bottom: 1em;
+    }
+}}
+
+.footer-container-bottom {
+    padding-bottom: 2em;
+
+    p {
+        color: $icon_color;
+    }
+
+    p:nth-child(2) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // &:hover {
+    //       box-shadow: none;
+    //       color: white;
+    //     }

@@ -2,11 +2,23 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+h3 {
+  color: rgb(17, 17, 17);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+p {
+  color: rgb(85, 85, 85);
+  font-size: 1.1em;
+}
+
 header {
-  padding: 2em 5% 0 5%;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0 8%;
+  padding-top: 2em;
 }
 header i {
   color: rgb(153, 153, 153);
@@ -28,7 +40,7 @@ nav {
 }
 
 .main-header-content {
-  width: 80%;
+  width: 65%;
   padding: 2em 5%;
 }
 
@@ -37,21 +49,23 @@ nav {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
+  font-size: 0.8em;
 }
 
 .main-header {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 900;
 }
 
 .header-text {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: rgb(85, 85, 85);
 }
 
 .button-signup {
-  border-radius: 100rem;
+  border-radius: 2rem;
   padding: 1rem 2.5rem;
+  margin: 1rem 0;
   font-weight: 600;
   color: rgb(17, 17, 17);
   border: solid 3px transparent;
@@ -61,25 +75,154 @@ nav {
   box-shadow: 2px 1000px 1px #fff inset;
 }
 
-.button-signup:hover {
-  box-shadow: none;
-  color: white;
-}
-
 .support-banner {
   width: 100%;
   padding-top: 2em;
   background-image: url("/Assignments/HTML CSS 06-17/assets/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -1em 0em;
+  background-position: -15em 0em;
+}
+.support-banner p {
+  color: rgb(17, 17, 17);
 }
 
 .support-content {
   width: 80%;
-  padding: 3em 5% 1em 5%;
+  padding: 3em 8% 1em 8%;
 }
-.support-content h2 {
+
+.support-companies {
+  padding: 0 8%;
+  padding-top: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+.support-companies img {
+  width: 80%;
+  padding: 5%;
+}
+.support-companies img:nth-last-child(1):nth-child(odd) {
+  grid-column: 1/span 2;
+  width: 40%;
+}
+
+.auction-container {
+  padding: 0 8%;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+.auction-container a {
+  color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 2em;
+}
+
+.auction-items-container {
+  display: flex;
+  gap: 2em;
+}
+
+.auction-item .auction-item-description {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-color: rgb(238, 238, 238);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.auction-item > img {
+  width: 15rem;
+  display: block;
+}
+.auction-item td:nth-child(even) {
+  text-align: right;
+}
+.auction-item .currency {
+  width: 0.6em;
+}
+.auction-item .series {
+  color: rgb(255, 128, 57);
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: 600;
+}
+.auction-item .top-bid-label {
+  color: rgb(85, 85, 85);
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: 600;
+}
+.auction-item .name, .auction-item .top-bid {
+  color: rgb(17, 17, 17);
+  font-size: 1em;
+  font-weight: 600;
+}
+.auction-item .auction-id, .auction-item .days-left {
+  color: rgb(85, 85, 85);
+  font-size: 0.8em;
+}
+
+.bottom-banner-container {
+  padding-left: 8%;
+  padding-top: 3em;
+  border-top: solid 2px rgb(238, 238, 238);
+  border-bottom: solid 2px rgb(238, 238, 238);
+  display: flex;
+}
+.bottom-banner-container .bottom-banner-content {
+  max-width: 50%;
+}
+.bottom-banner-container img {
+  margin-top: 4em;
+  margin-left: 1em;
+  margin-right: -2em;
+  align-self: flex-end;
+  max-width: 50%;
+  overflow: hidden;
+}
+.bottom-banner-container .header-text {
+  border-top: solid 2px rgb(238, 238, 238);
+}
+
+footer {
+  padding: 0 8%;
+  padding-top: 2em;
+}
+
+.socials > i {
+  padding: 0.4rem;
+  color: rgb(153, 153, 153);
+}
+
+.footer-container-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-container-right ul {
+  list-style: none;
+  flex: 50%;
+  padding: 0;
+}
+.footer-container-right li {
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  padding-bottom: 0.5em;
+}
+.footer-container-right li:first-child {
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+
+.footer-container-bottom {
+  padding-bottom: 2em;
+}
+.footer-container-bottom p {
+  color: rgb(153, 153, 153);
+}
+.footer-container-bottom p:nth-child(2) {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
